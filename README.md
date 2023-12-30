@@ -1,5 +1,5 @@
 # s1blocks
-s1blocks is a simple web application for the Scratch 1.x version of the Block Plugin (a.k.a. scratchblocks), used on the 1.x Wiki and Forums.
+s1blocks provides a simple web interface for interacting with the Scratch 1.x version of the Block Plugin (a.k.a. scratchblocks), used on the 1.x Wiki and Forums.
 
 The interface is very rudimentary and contains only the bare minimum at the moment, but I plan to clean it up and make everything a bit more proper.
 
