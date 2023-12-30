@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scratch Blocks Plugin</title>
+        <script type="text/javascript" src="./blocksplugin.js"></script>
+        <script type="text/javascript">
+            function parseInput(inputId, outputClass) {
+                var blockCode = document.getElementById(inputId).value;
+                document.getElementById(outputClass).innerHTML = blockCode;
+                scratchBlocksPlugin.parse({
+                    containerTag: 'pre',
+                    containerClass: outputClass,
+                    staticDir: './static/'
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <!-- input for scratchblocks code -->
+        <textarea id="blockCode"></textarea>
+        <input type="button" value="Parse" onclick="parseInput('blockCode', 'scratchblocks')"/>
+        <!-- empty pre element for parsed code to occupy -->
+        <pre class="scratchblocks" id="scratchblocks"></pre>
+    </body>
+</html>
