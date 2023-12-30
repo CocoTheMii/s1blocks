@@ -17,6 +17,9 @@ The block plugin itself can also be implemented elsewhere. It consists of two pa
 
 You should check `blocksplugin.js` and `index.html` to get an idea of how the plugin works.
 
+## Known Issues
+* Certain characters, such as `<` and `>`, can cause formatting issues
+
 ## Credit
 The original block plugin was created in 2011 by Joren Lauwers (a.k.a. JSO), then a Scratch Team member.
 
