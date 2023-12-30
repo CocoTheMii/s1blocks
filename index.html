@@ -6,7 +6,7 @@
         <script type="text/javascript">
             function parseInput(inputId, outputClass) {
                 var blockCode = document.getElementById(inputId).value;
-                document.getElementById(outputClass).innerHTML = blockCode;
+                document.getElementById(outputClass).textContent = blockCode;
                 scratchBlocksPlugin.parse({
                     containerTag: 'pre',
                     containerClass: outputClass,
