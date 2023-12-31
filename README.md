@@ -1,7 +1,14 @@
 # s1blocks
 s1blocks provides a simple web interface for interacting with the Scratch 1.x version of the Block Plugin (a.k.a. scratchblocks), used on the 1.x Wiki and Forums.
 
-The interface is very rudimentary and contains only the bare minimum at the moment, but I plan to clean it up and make everything a bit more proper.
+The layout of the webpage is based on that of [scratchblocks](https://scratchblocks.github.io) by [blob8108](https://blob.codes), with some omissions:
+
+* localization
+* support for multiple Scratch versions
+* the ability to generate scratchblocks code from a Scratch project
+* generating an image of generated blocks in PNG or SVG format
+
+This is more of a hobbyist project than an actual tool intended for widespread consumption. For everyday purposes, you should use the official [scratchblocks](https://scratchblocks.github.io) plugin instead.
 
 ## Usage
 To use the plugin, type your scratchblocks code into the text field, then click "Parse" to render the blocks.
