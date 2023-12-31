@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <title>s1blocks</title>
+        <link rel="stylesheet" href="./main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
         <script type="text/javascript" src="./blocksplugin.js"></script>
         <script type="text/javascript">
             function parseInput(inputId, outputClass) {
@@ -18,10 +20,26 @@
         </script>
     </head>
     <body>
-        <!-- input for scratchblocks code -->
-        <textarea id="blockCode"></textarea>
-        <input type="button" value="Parse" onclick="parseInput('blockCode', 'scratchblocks')"/>
-        <!-- empty pre element for parsed code to occupy -->
-        <pre class="scratchblocks" id="scratchblocks"></pre>
+        <header>
+            <h1 id="title">s1blocks</h1>
+            <h2 id="credit">
+                <span class="separator">site by <a href="https://github.com/CocoTheMii" target="_blank">CocoTheMii</a></span>
+                <span class="separator">layout based on <a href="https://scratchblocks.github.io" target="_blank">scratchblocks</a> by <a href="https://blob.codes" target="_blank">blob8108</a></span>
+                plugin by <a href="https://scratch.mit.edu/users/JSO" target="_blank">JSO</a>
+            </h2>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="https://en.scratch-wiki.info/wiki/Block_Plugin_(1.4)/Syntax" target="_blank">syntax help</a></li>
+                    <li><a href="https://github.com/CocoTheMii/s1blocks" target="_blank">github</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- input for scratchblocks code -->
+            <textarea id="blockCode" placeholder="when green flag clicked"></textarea>
+            <input id="parse" type="button" value="Parse!" onclick="parseInput('blockCode', 'scratchblocks')"/>
+            <!-- empty pre element for parsed code to occupy -->
+            <pre class="scratchblocks" id="scratchblocks"></pre>
+        </main>
     </body>
 </html>
