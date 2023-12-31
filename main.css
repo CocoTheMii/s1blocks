@@ -89,6 +89,7 @@ main {
 
 #scratchblocks * {
     box-sizing: content-box;
+    white-space: nowrap;
 }
 
 #parse {
