@@ -5,8 +5,10 @@
         <script type="text/javascript" src="./blocksplugin.js"></script>
         <script type="text/javascript">
             function parseInput(inputId, outputClass) {
+                // read code from <textarea> and copy it into <pre>
                 var blockCode = document.getElementById(inputId).value;
                 document.getElementById(outputClass).textContent = blockCode;
+                // parse code in <pre> using block plugin
                 scratchBlocksPlugin.parse({
                     containerTag: 'pre',
                     containerClass: outputClass,
