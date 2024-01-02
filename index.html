@@ -6,11 +6,13 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
         <script type="text/javascript" src="./blocksplugin.js"></script>
         <script type="text/javascript">
-            function parseInput(inputId, outputClass) {
-                // read code from <textarea> and copy it into <pre>
+            function parseInput(inputId, outputId) {
+                // read code from input and copy it into output
                 var blockCode = document.getElementById(inputId).value;
-                document.getElementById(outputClass).textContent = blockCode;
-                // parse code in <pre> using block plugin
+                document.getElementById(outputId).textContent = blockCode;
+                // get class name of output element
+                outputClass = document.getElementById(outputId).className;
+                // parse code using block plugin
                 scratchBlocksPlugin.parse({
                     containerTag: 'pre',
                     containerClass: outputClass,
@@ -35,11 +37,18 @@
             </nav>
         </header>
         <main>
-            <!-- input for scratchblocks code -->
-            <textarea id="blockCode" placeholder="your code here..."></textarea>
-            <input id="parse" type="button" value="Parse!" onclick="parseInput('blockCode', 'scratchblocks')"/>
-            <!-- empty pre element for parsed code to occupy -->
-            <pre class="scratchblocks" id="scratchblocks"></pre>
+            <!-- <textarea> to input scratchblocks code -->
+            <div class="io_box">
+                <h3>Input</h3>
+                <textarea id="input" placeholder="your code here..."></textarea>
+            </div>
+            <!-- button to parse input -->
+            <input id="parse" type="button" value="Parse!" onclick="parseInput('input', 'output')"/>
+            <!-- empty <pre> to contain parsed output -->
+            <div class="io_box">
+                <h3>Output</h3>
+                <pre id="output" class="scratchblocks"></pre>
+            </div>
         </main>
     </body>
 </html>
