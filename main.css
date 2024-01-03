@@ -1,7 +1,10 @@
-* {
-    box-sizing: border-box;
+:root {
     --body-font: "Noto Sans", sans-serif;
     --code-font: "JetBrains Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -66,7 +69,7 @@ main {
     flex-direction: row;
     max-width: 2000px;
     width: 100%;
-    height: calc(100vh - 12rem);
+    height: calc(100vh - 10rem);
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -85,7 +88,7 @@ main {
 
 #input {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 2rem);
     margin: 0;
     resize: none;
     border: 1px solid gray;
@@ -95,7 +98,7 @@ main {
 
 #output {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 2rem);
     border: 1px solid gray;
     padding: 1em;
     margin: 0;
