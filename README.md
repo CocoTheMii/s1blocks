@@ -6,7 +6,7 @@ The layout of the webpage is based on that of [scratchblocks](https://scratchblo
 * localization
 * support for multiple Scratch versions
 * the ability to generate scratchblocks code from a Scratch project
-* generating an image of generated blocks in PNG or SVG format
+* saving an image of generated blocks in PNG or SVG format
 
 This is more of a hobbyist project than an actual tool intended for mainstream consumption. For everyday purposes, you should use the official [scratchblocks](https://scratchblocks.github.io) plugin instead.
 
