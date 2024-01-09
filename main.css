@@ -1,6 +1,9 @@
 :root {
     --body-font: "Anuphan", sans-serif;
     --code-font: "JetBrains Mono", monospace;
+    --font-thin: 200;
+    --font-reg: 400;
+    --font-bold: 700;
 }
 
 * {
@@ -13,6 +16,7 @@ html {
 
 body {
     font-family: var(--body-font);
+    font-weight: var(--font-reg);
     padding: 1.5rem;
 }
 
@@ -25,14 +29,15 @@ header {
 
 #title {
     font-size: 20pt;
+    font-weight: var(--font-bold);
     margin: 0;
     margin-right: 1em;
 }
 
 #credit {
+    font-size: 10pt;
     font-weight: 400;
     margin: 0;
-    font-size: 10pt;
 }
 
 .separator::after {
@@ -50,7 +55,7 @@ a:hover {
 
 #navigation {
     margin-left: auto;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 #navigation ul {
@@ -85,6 +90,7 @@ main {
 
 .io_box h3 {
     font-size: 12pt;
+    font-weight: var(--font-bold);
     margin: 0;
     margin-bottom: 0.5em;
 }
@@ -96,6 +102,7 @@ main {
     resize: none;
     border: 1px solid gray;
     font-family: var(--code-font);
+    font-weight: var(--font-thin);
     font-size: 12pt;
 }
 
@@ -115,6 +122,7 @@ main {
 
 #parse {
     font-family: var(--body-font);
+    font-weight: var(--font-reg);
     font-size: 12pt;
     padding: 0.5em;
     margin: 0 2rem;
